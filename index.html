@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Услуги электрика 24/7 — Срочный выезд | Алматы</title>
-  <meta name="description" content="Электрик 24/7. Срочный выезд, честные цены, гарантия на все работы. Звоните или оставьте заявку — ответим за 45 минут.">
+  <title>Электрик в Алматы — Профессиональные услуги, срочный выезд 24/7, 13+ лет опыта, гарантия качества</title>
+  <meta name="description" content="Профессиональные услуги электрика в Алматы любой сложности. Срочный выезд 24/7, 13+ лет опыта, гарантия качества. Электромонтаж, ремонт проводки, установка освещения и розеток.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
@@ -50,14 +50,16 @@
 
 <header class="header">
   <div class="container header-row">
-    <div class="logo">ЭЛЕКТРИК⚡</div>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="">
+    </div>
 
     <div class="header-contacts" id="mobileMenu">
 
     <!-- Телефон -->
     <a href="tel:+77076035981" class="contact-item phone">
         <i class="fa-solid fa-phone"></i>
-        <span>+7 (707) 603-59-81</span>
+        <span style="display: block;">+7 (707) 603-59-81</span>
     </a>
 
     <!-- WhatsApp -->
@@ -67,9 +69,15 @@
     </a>
 
     <!-- Telegram -->
-    <a href="https://t.me/almatyelectricbot" target="_blank" class="contact-item telegram">
+    <a href="https://t.me/" target="_blank" class="contact-item telegram">
         <i class="fa-brands fa-telegram"></i>
         <span>Telegram</span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/qazaqelektrik?igsh=dDkyb2djZjE2Zm53" target="_blank" class="contact-btn instagram">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
     </a>
 
     </div>
@@ -85,7 +93,8 @@
 <section class="hero">
     <div class="hero-overlay"></div>
   <div class="container hero-content">
-    <h1>Услуги электрика в Алматы</h1>
+    <h1>Профессиональный электрик в Алматы — любые работы, гарантия качества</h1>
+
     <p>Срочный выезд 24/7 • Гарантия на все работы • Честные цены • 13+ лет опыта</p>
     <button class="btn btn-large" id="openContact">Вызвать электрика</button>
 
@@ -104,26 +113,32 @@
   width:280px;
   text-align:center;
 ">
-  <h3 style="margin-bottom:18px;">Связаться</h3>
+  <h3 style="margin-bottom:18px; color: #000;">Связаться!</h3>
 
   <div style="display:flex; flex-direction:column; gap:12px;">
 
     <!-- Позвонить -->
-    <a href="tel:+77712345678" class="contact-btn phone">
+    <a href="tel:+77076035981" class="contact-btn phone">
       <i class="fa-solid fa-phone"></i>
       Позвонить
     </a>
 
     <!-- WhatsApp -->
-    <a href="https://wa.me/77712345678" target="_blank" class="contact-btn whatsapp">
+    <a href="https://wa.me/77076035981" target="_blank" class="contact-btn whatsapp">
       <i class="fa-brands fa-whatsapp"></i>
       WhatsApp
     </a>
 
     <!-- Telegram -->
-    <a href="https://t.me/almatyelectricbot" target="_blank" class="contact-btn telegram">
+    <a href="https://t.me/" target="_blank" class="contact-btn telegram">
       <i class="fa-brands fa-telegram"></i>
       Telegram
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/qazaqelektrik?igsh=dDkyb2djZjE2Zm53" target="_blank" class="contact-btn instagram">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
     </a>
 
     <!-- Отмена -->
@@ -146,22 +161,22 @@
 
 <section class="services">
   <div class="container">
-    <h2>Наши услуги</h2>
+    <h2 class="services__title">Наши услуги</h2>
 
     <div class="grid-3">
       <div class="card">
         <img src="img/servise/0.jpg" alt="">
-        <h3>Электромонтажные работы</h3>
+        <h3 class="grid-3__title">Электромонтажные работы</h3>
       </div>
 
       <div class="card">
         <img src="img/servise/1.jpg" alt="">
-        <h3>Ремонт электропроводки</h3>
+        <h3 class="grid-3__title">Ремонт электропроводки</h3>
       </div>
 
       <div class="card">
         <img src="img/servise/2.jpg" alt="">
-        <h3>Установка осветительных приборов</h3>
+        <h3 class="grid-3__title">Установка осветительных приборов</h3>
       </div>
     </div>
   </div>
@@ -169,7 +184,7 @@
 
 <section class="gallery">
   <div class="container">
-    <h2>Галерея работ</h2>
+    <h2 class="services__title">Примеры работ</h2>
     <div class="grid-3">
       <img src="img/work/0.jpg">
       <img src="img/work/1.jpg">
@@ -183,7 +198,7 @@
 
 <footer class="footer">
   <div class="container">
-    <p>© 2026 Электрик | Все права защищены</p>
+    <p>&copy; <span id="year"></span> Все права защищены</p>
   </div>
 </footer>
 
