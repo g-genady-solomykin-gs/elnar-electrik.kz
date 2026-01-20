@@ -4,7 +4,20 @@ body { color: #222; }
 
 .container { max-width: 1200px; margin: auto; padding: 20px; }
 
+.owerfloy-div {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: #ececec83;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 
+.owerfloy-div.active {
+  display: block;
+}
 
 .header { 
   background: #fff; 
@@ -266,9 +279,27 @@ form input, form textarea {
   border-radius: 5px;
 }
 
+.header-contacts__about {
+  display: none;
+}
+
+.contact-arrow {
+  text-align: center;
+  color: #ff6600; /* цвет стрелки/текста */
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
 
 /* MOBILE */
 @media (max-width: 479px) {
+
+  .header-contacts__about {
+    display: block;
+  font-size: 21px;
+  color: #000;
+}
 
   .container.hero-content {
     padding: 0;
@@ -283,12 +314,13 @@ form input, form textarea {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 60%;
+    width: 70%;
     height: 100dvh;
     align-items: baseline;
     background: #fff;
     flex-direction: column;
-    padding: 80px 20px;
+    padding: 0 20px;
+    margin-top: 56px;
     gap: 20px;
     transition: .3s;
     z-index: 1000;

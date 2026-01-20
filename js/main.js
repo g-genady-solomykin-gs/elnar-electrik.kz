@@ -44,20 +44,41 @@ form.onsubmit = e => {
 
 
 
- const openBtn = document.getElementById('openContact');
-  const modal = document.getElementById('contactOptions');
-  const closeBtn = document.getElementById('closeContact');
+const openBtn = document.getElementById('openContact');
+const modal = document.getElementById('contactOptions');
+const closeBtn = document.getElementById('closeContact');
+const owerfloydiv = document.querySelector('.owerfloy-div'); // элемент для overlay
 
-  openBtn.addEventListener('click', () => {
-    modal.style.display = 'block';
-  });
+// Открытие модалки
+openBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden'; // блокируем скролл
+  if(owerfloydiv) {
+    owerfloydiv.classList.add('active'); // добавляем класс active
+  }
+});
 
-  closeBtn.addEventListener('click', () => {
+// Закрытие модалки
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  document.body.style.overflow = ''; // восстанавливаем скролл
+  if(owerfloydiv) {
+    owerfloydiv.classList.remove('active'); // убираем класс active
+  }
+});
+
+// Закрытие при клике вне модалки
+window.addEventListener('click', (e) => {
+  if(e.target === modal) {
     modal.style.display = 'none';
-  });
+    document.body.style.overflow = '';
+    if(owerfloydiv) {
+      owerfloydiv.classList.remove('active');
+    }
+  }
+});
 
-  window.addEventListener('click', (e) => {
-    if(e.target === modal) modal.style.display = 'none';
-  });
+// Текущий год
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+
