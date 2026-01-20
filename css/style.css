@@ -43,14 +43,15 @@ body { color: #222; }
 .icon-btn { text-decoration: none; color: #000; }
 
 .btn {
-  background: #FFD400;
-  border: none;
-  padding: 10px 16px;
-  cursor: pointer;
-  border-radius: 6px;
+    background: #ffd402;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.btn-large { font-size: 18px; margin-top: 20px; }
+
+.btn-large { font-size: 18px; margin-top: 20px; color: #000; }
 
 .hero { text-align: center; padding: 80px 20px; background: #f9f9f9; }
 
@@ -64,7 +65,7 @@ body { color: #222; }
   margin-bottom: 10px;
   display: block;
   text-align: center;
-  font-size: 34px;
+  font-size: 27px;
   border-bottom: 1px solid #ececec;
   padding-bottom: 4px;
 }
